@@ -13,3 +13,12 @@ else {
 
 var gamebrd = document.getElementById('gameboard');
 
+function createBoard(){
+for (var i=0; i<cards.length; i++) {
+	var cardElement = document.createElement('div');
+	cardElement.className = 'card';
+	board.appendChild (cardElement);
+}
+
+}
+createBoard();
